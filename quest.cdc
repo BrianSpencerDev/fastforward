@@ -34,7 +34,6 @@ pub fun unserializeStringToArray(_ str: String, height: UInt8, width: UInt8): [S
     while i < height {
         stringArr.append(str.slice(from: Int(i * width), upTo: Int((i+1) * width)))
 
-        log(stringArr[i])
         i = i + 1
     } 
 
